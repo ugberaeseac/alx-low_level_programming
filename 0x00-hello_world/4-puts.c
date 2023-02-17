@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  * main - Main entry
  * Return: 0 (success)
