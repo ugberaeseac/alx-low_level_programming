@@ -1,10 +1,11 @@
 #include <stdio.h>
+
 /**
  * Main - Entry Point
+ * Description - using printf to print sizes of data types
  * Return: 0 (success)
  */
 
-/* main () identified as void */
 int main(void)
 {
 	char c;
