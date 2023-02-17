@@ -3,6 +3,7 @@
  * Main - Entry Point
  * Return: 0 (success)
  */
+
 /* main () identified as void */
 int main(void)
 {
