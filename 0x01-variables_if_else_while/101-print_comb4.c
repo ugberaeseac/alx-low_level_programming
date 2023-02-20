@@ -15,7 +15,7 @@ int main(void)
 		l = i % 10;
 		if (j < k && k < l)
 		{
-			putchar(i + '0');
+			putchar(j + '0');
 			putchar(k + '0');
 			putchar(l + '0');
 			if (i < 700)
