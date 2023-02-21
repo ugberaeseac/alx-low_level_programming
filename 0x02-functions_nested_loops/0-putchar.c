@@ -2,11 +2,12 @@
 
 /**
  * Main - Entry Point
+ * _putchar - prints a character
  * Return: 0 Always Success
  */
 int main(void)
 {
-	_putchar('-');
+	_putchar('_');
 	_putchar('p');
 	_putchar('u');
 	_putchar('t');
