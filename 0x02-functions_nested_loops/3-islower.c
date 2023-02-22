@@ -9,7 +9,7 @@ int _islower(int c)
 	int a;
 
 	c = (c + '0');
-	if (c >= 'a' && <= 'z')
+	if (c >= 'a' && c <= 'z')
 	{
 		a = 0
 	}
