@@ -1,1 +1,1 @@
-This is a debugging readme
+This directory shows my understanding about debugging code
