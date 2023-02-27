@@ -2,7 +2,7 @@
 
 /**
  * _puts - prints a string followed by a new line
- * @str - character pointer value
+ * @str - the string to print
  *
  * Return: nothing
  */
