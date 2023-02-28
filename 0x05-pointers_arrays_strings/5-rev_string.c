@@ -2,27 +2,23 @@
 
 /**
  * rev_string - function that print a string in reverse
- * @s: String array to print
+ * @s: String array to reverse
  *
  * Return: nothing
  */
 void rev_string(char *s)
 {
-	int i = 0;
-	int j;
+	int i, c, l;
+	char h;
 
-	while (*s != '\0')
+	for (i = 0; s[i] != '\0'; i++)
+		;
+
+	l = i;
+	for (i--, c = 0; c < l / 2; i--, c++)
 	{
-		i++;
-		++s;
+		h = s[c];
+		s[c] = s[i];
+		s[i] = h;
 	}
-	s--;
-	j = i;
-	while (j > 0)
-	{
-		return (*s);
-		j--;
-		s--;
-	}
-	_putchar('\n');
 }
