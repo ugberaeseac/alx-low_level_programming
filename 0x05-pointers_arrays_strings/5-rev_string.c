@@ -20,7 +20,7 @@ void rev_string(char *s)
 	j = i;
 	while (j > 0)
 	{
-		return(*s);
+		return (*s);
 		j--;
 		s--;
 	}
