@@ -1,1 +1,1 @@
-The read me file for Pointers and Arrays
+This directory/repo represents my undertanding on C - Pointers, arrays and strings
