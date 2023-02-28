@@ -9,20 +9,20 @@
 void puts_half(char *str)
 {
 	int i = 0;
-	int j;
+	int j = 0;
+	int k;
 
-	while (*s != '\0')
+	while (*str != '\0')
 	{
 		i++;
-		++s;
+		++str;
 	}
-	s--;
-	j = i / 2;
-	while (j < i)
+	k = i / 2;
+	while (j <= k)
 	{
-		_putchar(*s);
-		j--;
-		s--;
+		_putchar(*str);
+		j++;
+		str++;
 	}
 	_putchar('\n');
 }
