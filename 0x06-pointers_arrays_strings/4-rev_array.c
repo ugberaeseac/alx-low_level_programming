@@ -5,9 +5,9 @@
  * @a: an arry of integers
  * @n: number of elements of the array
  *
- * Return (a)
+ * Return nothing
  */
-void reverse_array(int *a, int *n)
+void reverse_array(int *a, int n)
 {
 	int i;
 	int k;
