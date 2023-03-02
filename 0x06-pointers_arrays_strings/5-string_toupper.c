@@ -4,7 +4,7 @@
  * string_toupper - function that converts all lowercase letters to uppercase
  * @c: charcter pointer
  *
- * Return: nothing
+ * Return: c
  */
 char *string_toupper(char *c)
 {
@@ -14,7 +14,8 @@ char *string_toupper(char *c)
 	{
 		if (c[i] >= 'a' && c[i] <= 'z')
 		{
-			c[i] = c[i] + 32;
+			c[i] = c[i] - 32;
 		}
 	}
+return (c);
 }
