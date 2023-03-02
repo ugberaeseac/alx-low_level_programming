@@ -25,7 +25,7 @@ char *rot13(char *s)
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		j = 0;
-		while (alpha[j] != '\0')
+		while (alpha[j] != '\0' && si[i] != alpha[j])
 			i++;
 
 		if (s[i] == alpha[j])
