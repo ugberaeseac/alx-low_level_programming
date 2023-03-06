@@ -5,7 +5,7 @@
  * @s: String to be checked
  * @accept: string characters to check
  *
- * Return: a pointer to the string s
+ * Return: a pointer to the string s, NULL is unmatched
  */
 char *_strpbrk(char *s, char *accept)
 {
