@@ -16,7 +16,7 @@ int is_prime_number(int n)
 	}
 	return (_check_prime(n, div));
 }
-i
+
 /**
  * _check_prime - function to check for prime number
  * @p: number to check if prime
