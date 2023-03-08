@@ -8,3 +8,4 @@ int _sqrt_recursion(int n);
 int is_prime_number(int n);
 int _get_root(int m, int n);
 int _check_prime(int p, int q);
+int _wild_cmp_check(char *s1, char *s2, int i, int j);
