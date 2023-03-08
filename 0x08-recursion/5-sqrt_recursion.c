@@ -34,5 +34,5 @@ int _get_root(int m, int n)
 	{
 		return (n);
 	}
-	return ((_getroot(m, n + 1)));
+	return ((_get_root(m, n + 1)));
 }
