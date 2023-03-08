@@ -7,3 +7,4 @@ int _pow_recursion(int x, int y);
 int _sqrt_recursion(int n);
 int is_prime_number(int n);
 int _get_root(int m, int n);
+int _check_prime(int p, int q);
