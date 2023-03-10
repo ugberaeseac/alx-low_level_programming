@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - Program that multiplies two numbers passed as arguments
@@ -9,13 +10,13 @@
  */
 int main(int argc, char *argv[])
 {
-	if (argc == 1 || argc > 3)
+	if (argc < 2 || argc > 3)
 	{
 		printf("Error\n");
 	}
 	else
 	{
-		printf("%d\n", (argv[1] * argv[2]));
+		printf("%d\n", (atoi(argv[1]) * atoi(argv[2])));
 	}
 	return (0);
 }
