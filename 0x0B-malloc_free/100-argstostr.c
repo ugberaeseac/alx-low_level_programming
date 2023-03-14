@@ -53,10 +53,11 @@ char *argstostr(int ac, char **av)
 int _strlen(char *str)
 {
 	int length = 0;
+	int i = 0;
 
 	while (str[i] != '\0')
 		length++;
-		s++;
+		i++;
 
 	return (length);
-}
+i}
