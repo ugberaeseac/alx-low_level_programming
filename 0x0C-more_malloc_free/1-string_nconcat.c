@@ -36,7 +36,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	if (n >= length2)
 		n = length2;
-	
+
 	for (j = 0; j < n; j++)
 	{
 		ptr[i] = s2[j];
