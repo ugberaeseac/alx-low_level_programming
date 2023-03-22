@@ -1,5 +1,5 @@
 #include <stddef.h>
-#include "functio_pointers.h"
+#include "function_pointers.h"
 
 /**
  * op_add - adds two integers
@@ -46,7 +46,7 @@ int op_mul(int a, int b)
  */
 int op_div(int a, int b)
 {
-	return (a / d);
+	return (a / b);
 }
 
 /**
