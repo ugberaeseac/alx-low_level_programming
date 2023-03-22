@@ -7,7 +7,7 @@
  * @array: array, @size: array size
  * @action: function pointer to functions given as parameter
  */
-void array_iterator(int *array, size_t size void (*action)(int))
+void array_iterator(int *array, size_t size, void (*action)(int))
 {
 	size_t i;
 
