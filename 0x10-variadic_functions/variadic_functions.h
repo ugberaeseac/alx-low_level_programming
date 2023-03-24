@@ -9,15 +9,4 @@ void print_numbers(const char *separator, const unsigned int n, ...);
 void print_strings(const char *separator, const unsigned int n, ...);
 void print_all(const char * const format, ...);
 
-/**
- * struct - struct
- * @character: character format
- * @fptr: function pointer
- */
-typedef struct 
-{
-	char *character;
-	void (*fptr)();
-} datatype;
-
 #endif
