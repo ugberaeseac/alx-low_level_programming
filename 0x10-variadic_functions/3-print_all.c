@@ -12,7 +12,6 @@ void print_all(const char * const format, ...)
 	char *s;
 	int i = 0;
 
-	
 
 
 
