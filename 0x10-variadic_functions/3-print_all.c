@@ -10,13 +10,13 @@ void print_all(const char * const format, ...)
 	int i = 0, j;
 	char *comma = "";
 
-/* struct_datatype - Typedef for unsigned int */
-	struct_datatype select[] = {{'c', print_char},
+	datatype select[] = {{'c', print_char},
 					{'i', print_integer},
 					{'f', print_float},
 					{'s', print_string},
-					{'\0', NULL},};
-	valist args;
+					{'\0', NULL}};
+
+	va_list args;
 
 	va_start(args, format);
 
@@ -28,7 +28,7 @@ void print_all(const char * const format, ...)
 			if (select[j].list == format[j])
 			{
 				printf("%s", comma);
-				select[j].fptr(valist);
+				select[j].fptr(args);
 				comma = ", ";
 			}
 			j++;
@@ -36,41 +36,41 @@ void print_all(const char * const format, ...)
 		i++;
 	}
 	va_end(args);
-	prinf("\n");
+	printf("\n");
 }
 
 /**
  * print_char - function that prints a char
- * @valist: datatype of optional variable to print
+ * @args: optional variable to print
  */
-void print_char(valist)
+void print_char(va_list args)
 {
-	printf("%c", va_arg(args, int);
+	printf("%c", va_arg(args, int));
 }
 
 /**
  * print_integer - function that prints an integer
- * @valist: datatype of optional variable to print
+ * @args: optional variable to print
  */
-void print_integer(valist)
+void print_integer(va_list args)
 {
-	printf("%i", va_arg(args, int);
+	printf("%i", va_arg(args, int));
 }
 
 /**
  * print_float - function that prints a float
- * @valist: datatype of optional variable to print
+ * @args: optional variable to print
  */
-void print_float(valist)
+void print_float(va_list args)
 {
-	printf("%f", va_arg(args, int);
+	printf("%f", va_arg(args, double));
 }
 
 /**
  * print_string - function that prints a string
- * @valist: datatype of optional variable to print
+ * @args: optional variable to print
  */
-void print_string(valist)
+void print_string(va_list args)
 {
 	char *str;
 
