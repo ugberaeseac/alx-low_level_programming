@@ -25,7 +25,7 @@ void print_all(const char * const format, ...)
 		j = 0;
 		while (select[j].list != '\0')
 		{
-			if (select[j].list == format[j])
+			if (select[j].list == format[i])
 			{
 				printf("%s", comma);
 				select[j].fptr(args);
@@ -54,7 +54,7 @@ void print_char(va_list args)
  */
 void print_integer(va_list args)
 {
-	printf("%i", va_arg(args, int));
+	printf("%d", va_arg(args, int));
 }
 
 /**
