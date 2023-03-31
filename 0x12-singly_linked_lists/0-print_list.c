@@ -2,7 +2,7 @@
 
 /**
  * print_list - function that prints all elements of a singly list
- * @h: temp pointer that points to a struct node
+ * @h: head node
  *
  * Return: number of nodes
  */
