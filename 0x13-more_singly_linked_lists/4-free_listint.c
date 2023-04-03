@@ -2,7 +2,7 @@
 
 /**
  * free_listint - function that frees a singly list
- * @head - pointer to first node
+ * @head: pointer to first node
  *
  * Return: void
  */
@@ -12,7 +12,7 @@ void free_listint(listint_t *head)
 
 	if (head == NULL)
 		return;
-	
+
 	while (head != NULL)
 	{
 		temp = head;
