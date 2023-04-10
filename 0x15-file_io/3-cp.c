@@ -64,19 +64,21 @@ int main(int argc, char *argv[])
 	buffer = malloc(1024);
 
 	while ((read_f = read(fd_1, buffer, 1024)) != 0)
-	read_f = read(fd_1, buffer, 1024);
-	if (read_f == -1)
 	{
-		free(buffer);
-		_error(0, 98, argv[1]);
-	}
-	write_f = write(fd_2, buffer, read_f);
-	if (write_f == -1)
-	{
-		free(buffer);
-		_error(0, 99, argv[2]);
-	}
 
+		read_f = read(fd_1, buffer, 1024);
+		if (read_f == -1)
+		{
+			free(buffer);
+			_error(0, 98, argv[1]);
+		}
+		write_f = write(fd_2, buffer, read_f);
+		if (write_f == -1)
+		{
+			free(buffer);
+			_error(0, 99, argv[2]);
+		}
+	}
 
 	if (close(fd_1) == -1 || close(fd_2) == -1)
 		_error(0, 100, NULL);
