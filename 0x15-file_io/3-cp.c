@@ -46,7 +46,7 @@ return (0);
 int main(int argc, char *argv[])
 {
 	int fd_1, fd_2;
-	char *buffer;
+	char buffer[1024];
 	int read_f;
 	int write_f;
 
@@ -61,7 +61,6 @@ int main(int argc, char *argv[])
 	if (fd_2 == -1)
 		_error(0, 99, argv[2]);
 
-	buffer = malloc(1024);
 
 	while ((read_f = read(fd_1, buffer, 1024)) != 0)
 	{
@@ -69,13 +68,11 @@ int main(int argc, char *argv[])
 		read_f = read(fd_1, buffer, 1024);
 		if (read_f == -1)
 		{
-			free(buffer);
 			_error(0, 98, argv[1]);
 		}
 		write_f = write(fd_2, buffer, read_f);
 		if (write_f == -1)
 		{
-			free(buffer);
 			_error(0, 99, argv[2]);
 		}
 	}
