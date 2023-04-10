@@ -46,7 +46,7 @@ return (0);
 int main(int argc, char *argv[])
 {
 	int fd_1, fd_2;
-	char buffer[1024];
+	char *buffer[1024];
 	int read_f, write_f;
 
 	if (argc != 3)
@@ -63,8 +63,6 @@ int main(int argc, char *argv[])
 
 	while ((read_f = read(fd_1, buffer, 1024)) != 0)
 	{
-
-		read_f = read(fd_1, buffer, 1024);
 		if (read_f == -1)
 			_error(0, 98, argv[1]);
 
