@@ -83,6 +83,9 @@ int main(int argc, char *argv[])
 	if (close(fd_1) == -1 || close(fd_2) == -1)
 		_error(0, 100, NULL);
 
+	close(fd_1);
+	close(fd_2);
+
 	return (0);
 }
 
