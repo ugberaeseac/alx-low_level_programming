@@ -10,7 +10,7 @@
 int append_text_to_file(const char *filename, char *text_content)
 {
 	int fd;
-	int strlength = 0;
+	int i = 0; strlength = 0;
 	int n_write;
 
 	if (filename == NULL)
@@ -26,8 +26,11 @@ int append_text_to_file(const char *filename, char *text_content)
 		return (1);
 	}
 
-	while (text_content)
+	while (text_content[i])
+	{
 		strlength++;
+		i++;
+	}
 
 	n_write = write(fd, text_content, strlength);
 	if (n_write == -1 || n_write != strlength)
