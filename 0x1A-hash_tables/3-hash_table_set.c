@@ -77,7 +77,7 @@ hash_node_t *_create_data(const char *key, const char *value)
 
 /**
  * _free_data - function that frees the data in a particular hash table index
- * @data - data items to be freed
+ * @data: data items to be freed
  *
  * Return: void
  */
