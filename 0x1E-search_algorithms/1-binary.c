@@ -28,12 +28,12 @@ int binary_search(int *array, size_t size, int value)
 			printf("%d, ", array[i]);
 		printf("%d\n", array[upperBound]);
 		midBound = (lowBound + upperBound) / 2;
-		if (value > midBound)
+		if (array[midBound] == value)
+			return (midBound)
+		else if (array[midBound] < value)
 			lowBound = midBound + 1;
-		else if (value < midBound)
-			upperBound = midBound - 1;
 		else
-			return (midBound);
+			upperBound = midBound - 1;
 	}
 	return (-1);
 
