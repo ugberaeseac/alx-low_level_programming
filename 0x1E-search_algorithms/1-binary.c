@@ -29,7 +29,7 @@ int binary_search(int *array, size_t size, int value)
 		printf("%d\n", array[upperBound]);
 		midBound = (lowBound + upperBound) / 2;
 		if (array[midBound] == value)
-			return (midBound)
+			return (midBound);
 		else if (array[midBound] < value)
 			lowBound = midBound + 1;
 		else
