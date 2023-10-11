@@ -22,7 +22,7 @@ int binary_search(int *array, size_t size, int value)
 	if (array == NULL)
 		return (-1);
 
-	while (lowBound < upperBound)
+	while (lowBound <= upperBound)
 	{
 		printf("Searching in array: ");
 		for (i = lowBound; i < upperBound; i++)
